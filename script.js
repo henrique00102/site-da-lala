@@ -15,13 +15,13 @@ const sobremesas = [
         nome: "Naked Cake no acetato",
         descricao: "Delicioso bolinho montado no acetato, uma opção que ficará linda na sua mesa de Natal.",
         preco: "R$ 80,00 o kg",
-        imagem: "imagens/Naked Cake no acetato.jpeg"
+        imagem: "imagens/naked-cake-no-acetato.jpeg"
     },
     {
         nome: "Bolinho de maracujá com Nutella",
         descricao: "Uma combinação deliciosa de maracujá com Nutella.",
         preco: "Médio: R$ 29,00 | Grande: R$ 66,00",
-        imagem: "imagens/Bolinho de maracujá com Nutella.jpeg"
+        imagem: "imagens/bolinho-maracujá-nutella.jpeg"
     },
     {
         nome: "Guirlanda de Brownie",
@@ -39,7 +39,7 @@ const sobremesas = [
         nome: "Bombom de uva",
         descricao: "Em breve, mais informações.",
         preco: "Médio: R$ 65,00 / Grande: R$ 130,00",
-        imagem: "imagens/Bombom de uva.jpeg"
+        imagem: "imagens/bombom-uva.jpeg"
     }
 ];
 
@@ -48,13 +48,13 @@ const lembrancinhas = [
         nome: "Mini Guirlanda Brownie",
         descricao: "Ótima opção para presentear quem você ama! Delicioso disco de brownie com camada generosa de brigadeiro ao leite.",
         preco: "R$ 25,00",
-        imagem: "imagens/Mini guirlanda.jpeg"
+        imagem: "imagens/mini-guirlanda.jpeg"
     },
     {
         nome: "Mini Chocotone",
         descricao: "Uma opção especial para presentear neste Natal.",
         preco: "Brigadeiro ao leite: R$ 20,00 / Maracujá e ninho com Nutella: R$ 25,00",
-        imagem: "imagens/Mini chocotone.jpeg"
+        imagem: "imagens/mini-chocotone.jpeg"
     }
 ];
 
