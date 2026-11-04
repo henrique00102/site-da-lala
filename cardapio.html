@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cardápio - Gourmet Monteiro</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a class="brand" href="index.html">
+            <img src="logo.jpeg" alt="Gourmet Monteiro">
+        </a>
+
+        <div class="links">
+            <a href="#cardapio">Cardápio</a>
+            <a href="#promocoes">Promoções</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+
+        <div class="hero-in">
+
+
+            <div class="eyebrow">Doces · Confeitaria</div>
+
+            <h1>Menu</h1>
+
+            <span class="script">de Natal 2026</span>
+
+            <p>
+                Sabores artesanais para deixar sua mesa
+                de Natal ainda mais bonita e saborosa.
+            </p>
+
+            <div class="badge">
+                Encomendas abertas até 19/12
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="cardapio">
+
+        <div class="title">
+            <span class="script">Nossos sabores</span>
+            <h2>Cardápio de Natal</h2>
+            <div class="line"></div>
+        </div>
+
+        <h3 class="cat">🍰 Sobremesas</h3>
+        <div class="grid" id="g-sob"></div>
+
+        <h3 class="cat">🎁 Lembrancinhas</h3>
+        <div class="grid" id="g-lem"></div>
+
+    </section>
+
+    <section id="promocoes" class="aviso-Natal.jpeg">
+        <img src="aviso-Natal.jpeg" alt="Informações de Natal da Gourmet Monteiro">
+
+    </section>
+
+    <section id="contato">
+
+        <div class="title">
+            <span class="script">Faça sua encomenda</span>
+            <h2>Fale com a Gourmet Monteiro</h2>
+        </div>
+
+        <p>Entre em contato para fazer sua encomenda!</p>
+
+    </section>
+
+
+    <div id="modal-produto" class="modal-produto"
+     onclick="if(event.target === this) fecharProduto()">
+</div>
+
+ <div id="neve"></div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
