@@ -1,0 +1,492 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #590019;
+    color: white;
+}
+
+/* CAPA DE NATAL */
+.capa {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    position: relative;
+    overflow: hidden;
+    background: #650808;
+}
+
+.capa img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+/* BOTÃO ENTRAR */
+.botao-entrar {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 75%;
+    max-width: 350px;
+
+    padding: 20px;
+    border-radius: 50px;
+
+    background: #fff8ec;
+    color: #8b2424;
+
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* NAVEGAÇÃO */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: #590019;
+}
+
+nav .brand img {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* DESTAQUE DO SITE */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: #590019;
+    background: #35000D;
+}
+
+.hero-in {
+    max-width: 650px;
+    width: 100%;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    margin-bottom: 25px;
+}
+
+.eyebrow {
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+.script {
+    font-size: 32px;
+    color: #e5b77c;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 25px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: #8d252c;
+    padding: 12px 22px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #241619;
+    text-decoration: none;
+    padding: 17px 25px;
+    border-radius: 18px;
+    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* SEÇÕES */
+section:not(.capa) {
+    padding: 65px 8%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.line {
+    width: 70px;
+    height: 3px;
+    background: #c99a53;
+    margin: 20px auto;
+}
+
+.cat {
+    font-size: 23px;
+    margin: 35px 0 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* CONTATO */
+#contato {
+    text-align: center;
+    background: transparent;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .links {
+        gap: 20px;
+    }
+
+    .botao-entrar {
+        width: 80%;
+        bottom: 6%;
+        padding: 17px;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .script {
+        font-size: 27px;
+    }
+
+    .title h2 {
+        font-size: 26px;
+    }
+
+}
+
+/* CARTÕES DOS PRODUTOS */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.product-card {
+    background: #2b1b1e;
+    border: 1px solid #654044;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card h3 {
+    font-size: 19px;
+    margin: 18px 12px 10px;
+    color: #e5b77c;
+}
+
+.product-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 15px 15px;
+    color: #eee;
+}
+
+.product-card strong {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/* AJUSTE PARA CELULAR */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .product-card h3 {
+        font-size: 15px;
+    }
+
+    .product-card p {
+        font-size: 12px;
+    }
+
+    .product-card strong {
+        font-size: 13px;
+    }
+}
+
+/* PRODUTOS */
+.produto-clique {
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.produto-clique small {
+    display: block;
+    color: #d6ad75;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.product-card strong {
+    color: #e5b77c;
+}
+
+/* JANELA DE DESCRIÇÃO */
+.modal-produto {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-conteudo {
+    position: relative;
+    background: #2b1b1e;
+    border: 1px solid #c99a53;
+    border-radius: 18px;
+    padding: 25px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-conteudo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.modal-conteudo h2 {
+    color: #e5b77c;
+    margin-bottom: 15px;
+}
+
+.modal-conteudo p {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.modal-conteudo strong {
+    color: #e5b77c;
+    font-size: 18px;
+}
+
+.fechar {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: none;
+    background: #8d252c;
+    color: white;
+    font-size: 27px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* Animação ao abrir os detalhes */
+.modal-produto {
+    animation: aparecer 0.3s ease;
+}
+
+.modal-conteudo {
+    animation: zoom 0.35s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Efeito ao passar o dedo ou mouse */
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+    transform: scale(1.05);
+}
+
+/* NEVE DE NATAL */
+#neve {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    overflow: hidden;
+}
+
+.flocos {
+    position: absolute;
+    top: -30px;
+    color: white;
+    animation: cair linear infinite;
+    opacity: 0.9;
+    text-shadow: 0 0 5px white;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(-30px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+
+/* COR ÚNICA DO SITE */
+body {
+    background-color: #590019 !important;
+}
+
+nav {
+    background-color: #590019 !important;
+}
+
+#contato {
+    background-color: #590019 !important;
+}
+
+/* IMAGEM DE INFORMAÇÕES DE NATAL */
+
+.aviso-natal {
+    padding: 20px 15px !important;
+    background-color: #590019;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aviso-natal img {
+    display: block;
+    width: 85%;
+    max-width: 420px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* FONTES RÚSTICAS E ELEGANTES */
+
+h1,
+h2,
+h3,
+.cat {
+    font-family: 'Rye', serif;
+}
+
+.script {
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+body,
+p,
+a,
+.badge {
+    font-family: 'Lora', serif;
+}
